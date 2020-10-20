@@ -1,0 +1,37 @@
+// カラー設定
+$defaultFontColor: #1A1A1A;
+$keyColor: #B8B9B2;
+$grayColor: #E5E6DF;
+
+// フォント設定
+$xLargeFontSize: 2rem;
+$largeFontSize: 1.8rem;
+$mediumFontSize: 1.6rem;
+$smallFontSize: 1.4rem;
+$xSmallFontSize: 1.2rem;
+$minimumFontSize: 1rem;
+
+// letter-spacing
+$wideLetterSpacing: .15em;
+
+// line-height
+$clearLineHeight: 1;
+$smallLineHeight: 1.4;
+$mediumLineHeight: 1.6;
+$largeLineHeight: 1.8;
+$xLargeLineHeight: 2;
+
+// border-radius
+$borderRadius_5px: 5px;
+$borderRadius_10px: 10px;
+
+// transition
+$defaultTransition: .3s;
+$littleSlowTransition: 1s;
+$slowTransition: 1.5s;
+
+// opcity
+$defaultOpacity: .5;
+
+// easing
+$easing: cubic-bezier(0.19, 1, 0.22, 1);
