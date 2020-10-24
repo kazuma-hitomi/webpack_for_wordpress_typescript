@@ -1,29 +1,42 @@
 module.exports = {
-  root: true,
-  parser: '@typescript-eslint/parser',
+  parser: 'babel-eslint',
   parserOptions: {
-    project: './tsconfig.json'
+    'ecmaVersion': 2020,
+    'sourceType': 'module'
   },
-  plugins: [
-    '@typescript-eslint',
-    'prettier'
-  ],
-  'extends': [
+  extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'prettier/@typescript-eslint',
     'plugin:prettier/recommended'
   ],
-  'env': {},
-  'rules': {},
-  ignorePatterns: [
-    'node_modules/',
-    'babel.config.js',
-    'prettier.config.js',
-    'webpack.common.js',
-    'webpack.development.js',
-    'webpack.production.js'
-  ]
+  env: {
+    'browser': true,
+    'node': true,
+    'es6': true,
+  },
+  globals: {
+    'barba': false,
+  },
+  overrides: [
+    {
+      files: ['src/**/*.ts'],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: './tsconfig.json'
+      },
+      plugins: [
+        '@typescript-eslint',
+        'prettier'
+      ],
+      extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'prettier/@typescript-eslint',
+        'plugin:prettier/recommended',
+      ],
+      env: {},
+      rules: {},
+    }
+  ],
 }
