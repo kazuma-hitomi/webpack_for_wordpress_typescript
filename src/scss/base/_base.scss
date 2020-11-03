@@ -74,11 +74,17 @@ input {
   display: block;
   line-height: $clearLineHeight;
   border: none;
+  &[type="submit"] {
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
 }
 
 textarea {
   outline: none;
   display: block;
+  border: none;
 }
 
 select {
